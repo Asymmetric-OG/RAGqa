@@ -44,6 +44,8 @@ This project displays RAGs ability to help improve an LLMs answering capabilitie
 
 ---
 
-https://github.com/user-attachments/assets/027962fd-a172-4882-91e1-87735fadf49e
+## VIDEO
+
+https://github.com/user-attachments/assets/c620bf9e-2c26-48c6-8709-3f343fc46b01
 
 ---
