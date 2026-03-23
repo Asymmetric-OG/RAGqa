@@ -5,7 +5,7 @@ This project displays RAGs ability to help improve an LLMs answering capabilitie
 
 ---
 
-# Technologies
+## Technologies
 
 - `Python`
 - `LangChain`
@@ -17,7 +17,7 @@ This project displays RAGs ability to help improve an LLMs answering capabilitie
 
 ---
 
-# STEPS TO OPERATE
+## STEPS TO OPERATE
 
 1. Load required documents/corpus into `research/` folder as PDFs.
 2. Execute `app.py` to launch the frontend.
@@ -26,7 +26,7 @@ This project displays RAGs ability to help improve an LLMs answering capabilitie
 
 ---
 
-# HOW IT WORKS
+## HOW IT WORKS
 
 - Ingests pdfs from the provided corpus. 
 - Chunks the text and embeds it using `all-mpnet-base-v2`. 
@@ -36,7 +36,7 @@ This project displays RAGs ability to help improve an LLMs answering capabilitie
 
 ---
 
-# FILE OVERVIEW
+## FILE OVERVIEW
 
 - `app.py`: Frontend activation.
 - `rag_chain.py`: Backend RAG pipeline.
