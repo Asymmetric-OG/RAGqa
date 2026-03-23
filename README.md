@@ -1,4 +1,4 @@
-## Retrieval Augmented Generation based Q&A System
+# Retrieval Augmented Generation based Q&A System
 
 LLMs when asked highly specific subject matter based questions tend to be vague and hallucinate due to the excess of training corpus they are fed.
 This project displays RAGs ability to help improve an LLMs answering capabilities on such queries by providing them with most relevant chunks from required documents, 
