@@ -1,6 +1,7 @@
 ## Retrieval Augmented Generation based Q&A System
 
-Ask queries related to dense documents like research papers and get targeted context aware responses.
+LLMs when asked highly specific subject matter based questions tend to be vague and hallucinate due to the excess of training corpus they are fed.
+This project displays RAGs ability to help improve an LLMs answering capabilities on such queries by providing them with most relevant chunks from required documents, 
 
 ---
 
@@ -8,10 +9,11 @@ Ask queries related to dense documents like research papers and get targeted con
 
 - `Python`
 - `LangChain`
-- `Hugging Face Transformers`
 - `FAISS`
-- `SentenceTransformers / OpenAI Embeddings`
-- `PyPDF` 
+- `Hugging Face Transformers`
+- `Hugging Face Embeddings`
+- `PyPDF`
+- `RecursiveCharacterSplitter` 
 
 ---
 
@@ -27,7 +29,7 @@ Ask queries related to dense documents like research papers and get targeted con
 ## HOW IT WORKS
 
 - Ingests pdfs from the provided corpus. 
-- Splits and embeds text using `all-mpnet-base-v2`  
+- Chunks the text and embeds it using `all-mpnet-base-v2`. 
 - Stores chunks into `FAISS` wih `FLAT` indexing providing highly accurate retrieval. 
 - Uses publicly available LLMSs (like `flan-t5-base`) to generate answers from retrieved chunks.
 - Streamlit based frontend for easy interaction and prototyping.
@@ -38,7 +40,7 @@ Ask queries related to dense documents like research papers and get targeted con
 
 - `app.py`: Frontend activation.
 - `rag_chain.py`: Backend RAG pipeline.
-- `research/`: Documents to be queried
+- `research/`: Documents/Corpus to be queried.
 
 ---
 
