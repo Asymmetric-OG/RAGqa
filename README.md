@@ -4,7 +4,6 @@ LLMs when asked highly specific subject matter based questions tend to be vague 
 This project displays RAGs ability to help improve an LLMs answering capabilities on such queries by providing them with most relevant chunks from required documents, 
 
 ---
-
 ## Technologies
 
 - `Python`
@@ -14,9 +13,7 @@ This project displays RAGs ability to help improve an LLMs answering capabilitie
 - `Hugging Face Embeddings`
 - `PyPDF`
 - `RecursiveCharacterSplitter` 
-
 ---
-
 ## Steps to operate
 
 1. Load required documents/corpus into `research/` folder as PDFs.
@@ -25,7 +22,6 @@ This project displays RAGs ability to help improve an LLMs answering capabilitie
 4. Receive a well phrased and context accurate response/explanation.
 
 ---
-
 ## How it works
 
 - Ingests pdfs from the provided corpus. 
@@ -33,17 +29,13 @@ This project displays RAGs ability to help improve an LLMs answering capabilitie
 - Stores chunks into `FAISS` wih `FLAT` indexing providing highly accurate retrieval. 
 - Uses publicly available LLMSs (like `flan-t5-base`) to generate answers from retrieved chunks.
 - Streamlit based frontend for easy interaction and prototyping.
-
 ---
-
 ## File Overview
 
 - `app.py`: Frontend activation.
 - `rag_chain.py`: Backend RAG pipeline.
 - `research/`: Documents/Corpus to be queried.
-
 ---
-
 ## VIDEO
 
 https://github.com/user-attachments/assets/c620bf9e-2c26-48c6-8709-3f343fc46b01
